@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fraternidad Fénix</title>
+  <meta name="description" content="Fraternidad Fénix - Hermandad sobre ruedas. Pasión, respeto y libertad." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/fenix.png" alt="Logo Fraternidad Fenix" class="logo" />
+        <span class="club-name">Fraternidad Fénix</span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#unete">Únete</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content container">
+        <img src="assets/fenix.png" alt="Fénix" class="hero-logo" />
+        <h1>Fraternidad Fénix</h1>
+        <p class="tagline">Hermandad sobre ruedas. Pasión, respeto y libertad.</p>
+        <div class="hero-cta">
+          <a href="#unete" class="btn primary">Únete al club</a>
+          <a href="#eventos" class="btn outline">Ver eventos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section container">
+      <h2>Nosotros</h2>
+      <div class="two-col">
+        <div>
+          <p>Somos la <strong>Fraternidad Fénix</strong>, un motoclub nacido de la pasión por las rutas, la camaradería y el respeto. Organizamos salidas, eventos y actividades enfocadas en seguridad vial, formación y convivencia.</p>
+          <p>Nuestro objetivo es crear una comunidad sólida donde la hermandad y el compañerismo guíen cada kilómetro. Si compartes la pasión por las motocicletas y los valores del grupo, eres bienvenido.</p>
+        </div>
+        <div>
+          <ul class="values">
+            <li>Seguridad y respeto</li>
+            <li>Comunidad y apoyo</li>
+            <li>Eventos y rutas organizadas</li>
+            <li>Formación y buenas prácticas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section gallery container">
+      <h2>Galería</h2>
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Placeholder items. Replace with imágenes reales en assets/ y actualiza src -->
+        <div class="gallery-item"><img src="assets/fenix.png" alt="Galería 1" /></div>
+        <div class="gallery-item"><img src="assets/fenix.png" alt="Galería 2" /></div>
+        <div class="gallery-item"><img src="assets/fenix.png" alt="Galería 3" /></div>
+        <div class="gallery-item"><img src="assets/fenix.png" alt="Galería 4" /></div>
+        <div class="gallery-item"><img src="assets/fenix.png" alt="Galería 5" /></div>
+        <div class="gallery-item"><img src="assets/fenix.png" alt="Galería 6" /></div>
+      </div>
+    </section>
+
+    <section id="eventos" class="section container">
+      <h2>Eventos</h2>
+      <div class="events-grid">
+        <article class="event-card">
+          <h3>Ruta Nocturna - Ciudad</h3>
+          <p class="event-meta">Sábado, 28 de Junio · Salida 20:00</p>
+          <p>Encuentro en el estacionamiento central para una ruta guiada por la ciudad y parada en mirador.</p>
+        </article>
+        <article class="event-card">
+          <h3>Encuentro Anual Fénix</h3>
+          <p class="event-meta">Domingo, 13 de Julio · Todo el día</p>
+          <p>Concentración, desayuno, pruebas de seguridad y convivencia con foodtrucks.</p>
+        </article>
+        <article class="event-card">
+          <h3>Taller de Mantenimiento</h3>
+          <p class="event-meta">Miércoles, 2 de Agosto · 18:00</p>
+          <p>Taller práctico de mecánica básica y mantenimiento preventivo para miembros.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="unete" class="section container join">
+      <h2>Únete</h2>
+      <p>Si quieres ser parte de la fraternidad, llena el formulario de registro y nos pondremos en contacto contigo.</p>
+      <form id="join-form" class="form-card" novalidate>
+        <div class="form-row">
+          <label>Nombre completo <input type="text" name="name" required /></label>
+          <label>Correo electrónico <input type="email" name="email" required /></label>
+        </div>
+        <div class="form-row">
+          <label>Teléfono <input type="tel" name="phone" /></label>
+          <label>Modelo de moto <input type="text" name="bike" /></label>
+        </div>
+        <div class="form-row">
+          <label>Mensaje <textarea name="message" rows="3"></textarea></label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Enviar solicitud</button>
+          <button type="reset" class="btn outline">Limpiar</button>
+        </div>
+        <p id="join-feedback" class="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="contacto" class="section container contact">
+      <h2>Contacto</h2>
+      <div class="two-col">
+        <div>
+          <p>¿Dudas? ¿Propuestas de ruta o eventos? Escríbenos.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> contacto@fraternidadfenix.org</li>
+            <li><strong>Teléfono:</strong> +52 1 555 000 0000</li>
+            <li><strong>Redes:</strong> Instagram · Facebook · WhatsApp</li>
+          </ul>
+        </div>
+        <div>
+          <form id="contact-form" class="form-card" novalidate>
+            <label>Nombre completo <input type="text" name="name" required /></label>
+            <label>Correo <input type="email" name="email" required /></label>
+            <label>Mensaje <textarea name="message" rows="4" required></textarea></label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Enviar mensaje</button>
+            </div>
+            <p id="contact-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Fraternidad Fénix · Todos los derechos reservados.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="gallery-modal" class="modal" aria-hidden="true">
+    <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-content" id="modal-content"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
